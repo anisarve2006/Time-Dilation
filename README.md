@@ -1,91 +1,66 @@
 # Time Machine Simulation
 
-Overview
+## Overview
 
-This project is a Time Machine Simulation that visually demonstrates the concept of gravitational time dilation using General Relativity. The simulation models how time slows down near a massive object, such as a black hole or a neutron star, compared to an observer at a distance.
+This project is a **Time Machine Simulation** that visually demonstrates **gravitational time dilation** using General Relativity. The simulation models how time slows down near a massive object, such as a **black hole** or **neutron star**, compared to an observer at a distance.
 
-It features:
+### Features
 
-Real-time visualization using Matplotlib's 3D plotting.
+- **Real-time 3D Visualization** using Matplotlib.
+- **Graphical User Interface (GUI)** powered by PyQt5.
+- **Interactive Controls** to modify:
+  - **Mass** per point
+  - **Radius** of the gravitational object
+  - **Number of points** representing mass
+- **Live Time Dilation:**
+  - Displays **inside vs. outside time** using digital clocks.
+  - Uses **Einstein’s relativity equations** to simulate time slowing down.
+- **User Controls:**
+  - **Zooming & Resetting** options.
 
-Interactive controls to modify mass, radius, and number of points.
+## Installation
 
-Time dilation calculation based on gravitational potential.
+### Prerequisites
 
-Live clocks displaying inside vs. outside time progression.
+Ensure you have **Python 3** installed and install the required dependencies using:
 
-Features
-
-Graphical User Interface (GUI) powered by PyQt5.
-
-Real-time 3D visualization of a massive spherical object.
-
-Configurable parameters via sliders:
-
-Number of points representing mass
-
-Mass per point
-
-Radius of the gravitational object
-
-Live Time Dilation:
-
-Displays inside and outside time using digital clocks.
-
-Uses Einstein’s relativity equations to simulate time slowing down.
-
-Interactive zooming & resetting options.
-
-Installation
-
-Prerequisites
-
-Ensure you have Python 3 installed and install the required dependencies using:
-
+```bash
 pip install numpy pyqt5 matplotlib
+```
 
-Running the Simulation
+### Running the Simulation
 
 Run the following command:
 
+```bash
 python time_machine_simulation.py
+```
 
-How It Works
+## How It Works
 
-User Adjusts Parameters: Modify mass, radius, and point density using sliders.
+1. **User Adjusts Parameters**
+   - Modify **mass**, **radius**, and **point density** using sliders.
 
-Time Dilation Calculation:
+2. **Time Dilation Calculation**
+   - Uses **Einstein's equation**:
+   - **More massive and compact objects → Stronger time dilation**
 
-Uses Einstein's equation:
+3. **Visualization Updates**
+   - Generates a **Fibonacci sphere** to represent a massive object.
+   - Shows a **safe radius** where time is less affected.
 
+4. **Time Progression**
+   - **External time** moves normally.
+   - **Inside time** progresses **slower** due to gravitational effects.
 
+## Controls
 
-More massive and compact objects cause stronger time dilation.
+- **Sliders** → Adjust mass, radius, and number of points.
+- **Zoom In/Out** → Modify visualization scale.
+- **Reset Clocks** → Restart the time progression.
 
-Visualization Updates:
+## Future Enhancements
 
-Generates a Fibonacci sphere to represent a massive object.
-
-Shows a safe radius where time is less affected.
-
-Time Progression:
-
-External time moves normally.
-
-Inside time progresses slower due to gravitational effects.
-
-Controls
-
-Sliders: Adjust number of points, mass, and radius.
-
-Zoom In/Out: Modify the visualization scale.
-
-Reset Clocks: Restart the time progression.
-
-Future Enhancements
-
-Add realistic event horizon visualization.
-
-Implement test particle motion.
-
-Convert to a web-based version using Three.js.
+- **Realistic Event Horizon Visualization**
+- **Implement Test Particle Motion**
+- **Convert to Web-Based Version using Three.js**
